@@ -21,7 +21,7 @@ node('master') {
 
          sh 'node -v'
          sh 'npm prune'
-         sh 'npm install -g focal'
+         sh 'sudo npm install -g focal'
        }
 
        stage('Build Docker'){
